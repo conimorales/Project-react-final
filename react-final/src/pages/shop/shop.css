@@ -13,8 +13,8 @@
 
 .product {
   border-radius: 15px;
-  width: 250px;
-  height: 120px;
+  width: 300px;
+  height: 150px;
   margin: 100px;
   display: flex;
   flex-direction: column;

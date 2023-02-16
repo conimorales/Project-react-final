@@ -24,15 +24,13 @@ export const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/products" >Productos</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/cart" >Carrito de Compras</Link>
-            </li>
+            </li>           
           </ul>
+          <form class=" nav-item form-inline my-2 my-lg-0">
+            <Link className="nav-link" to="/cart" ><i class="fa-solid fa-cart-shopping"></i>Compras</Link>
+          </form>
         </div>
       </nav>
-
-  
     </div>
   );
 };
