@@ -11,6 +11,24 @@ import { Link } from 'react-router-dom'
 import Footer from "./Footer";
 
 
+class FlavorForm extends React.Component {
+	constructor(props) {
+	  super(props);
+	  this.state = {value: 'coconut'};
+  
+	  this.handleChange = this.handleChange.bind(this);
+	  this.handleSubmit = this.handleSubmit.bind(this);
+	}
+  
+	handleChange(event) {
+	  this.setState({value: event.target.value});
+	}
+  
+	handleSubmit(event) {
+	  alert('Your favorite flavor is: ' + this.state.value);
+	  event.preventDefault();
+	}
+}
 function DetailsProduct() {
 	const [cartsVisibilty, setCartVisible] =
 		useState(false);
@@ -107,7 +125,7 @@ function DetailsProduct() {
                                     onClick={() =>
                                         setCartVisible(true)
                                     }>
-                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <i className="fa-solid fa-cart-shopping"></i>
                                     {productsInCart.length >
                                         0 && (
                                         <span className="product-counte">
@@ -151,18 +169,19 @@ function DetailsProduct() {
 									product.description
 								}
 							</p>
+
 							<span className="product-price">
 								{product.price}$
 							</span>
 							<div className="buttons">
                             <p>
 
-                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <button className="btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                                     +
                                 </button>
                             </p>
-                                <div class="collapse" id="collapseExample">
-                                    <div class="card card-body">
+                                <div className="collapse" id="collapseExample">
+                                    <div className="card card-body">
                                         {product.description}
                                     </div>
                                 </div>
@@ -176,6 +195,11 @@ function DetailsProduct() {
 										)
 									}>
 									Agregar
+									<p>
+									
+									</p>
+
+									
 								</button>
 							</div>
 						</div>

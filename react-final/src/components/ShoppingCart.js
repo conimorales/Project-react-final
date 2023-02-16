@@ -4,8 +4,6 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import Form from './Form.js'
 
-import Export from './Export.js'
-
 
 
 function ShoppingCart({
@@ -39,11 +37,13 @@ function ShoppingCart({
 						<span className="empty-text">
 							No has seleccionado nada 
 						</span>
+
+						
 					)}
 					{products.map((product) => (
 						<>
-						<div>
-							<table class="table">
+						<div className="container">
+							<table className="table table-sm table-bordered" id="productos">
 								<thead>
 								<tr>
 								<th>id</th>
@@ -51,13 +51,14 @@ function ShoppingCart({
 								<th>Cantidad</th>
 								<th>Precio Unitario</th>
 								<th>Precio Total</th>
+								<th>¿Eliminar?</th>
 								</tr>
 								</thead>
 								<tbody>
 								<tr>
-								<td class='product'>{product.id}</td> 
-								<td class='productName'>{product.name}</td> 
-								<td class='cant'><select
+									<td className={product.id}>{product.id}</td>
+									<td className={product.name}>{product.name}</td>
+									<td><select
 								className="count"
 								value={
 									product.count
@@ -96,10 +97,10 @@ function ShoppingCart({
 										);
 									}
 								)}
-							</select>
-							</td>
-								<td class='cant'>{product.price}</td>
-								<td class='total'>{product.price * product.count}</td>
+							</select></td>
+								
+								<td className='cant'>{product.price}</td>
+								<td className='money' >{product.price * product.count}</td>
 								<td><button
 										className="btn remove-btn"
 										onClick={() =>
@@ -110,24 +111,31 @@ function ShoppingCart({
 										<RiDeleteBin6Line
 											size={20}
 										/>
-									</button></td>
+									</button></td> 
 								</tr>
 								</tbody>
 							</table>
+
+										
 						</div>
 
-						<Export/>
-						
 
 
 
 						
 					</>
 					))}
+					
 					{products.length > 0 && (
+					
 	
 
-						<div class="container mt-5">
+						<div className="container mt-5 col-12">
+							<p>
+								El precio total de tu pedido es :
+								<button>Calcular</button>
+							</p>
+
 							<h1>Formulario de compra</h1>
 
 							<Form/>
