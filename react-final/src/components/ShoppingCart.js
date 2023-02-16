@@ -131,10 +131,7 @@ function ShoppingCart({
 	
 
 						<div className="container mt-5 col-12">
-							<p>
-								El precio total de tu pedido es :
-								<button>Calcular</button>
-							</p>
+							
 
 							<h1>Formulario de compra</h1>
 

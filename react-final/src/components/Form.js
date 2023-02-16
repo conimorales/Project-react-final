@@ -1,9 +1,11 @@
 
 import React from 'react';
 
+
 function Form() {
     return (
         <>
+		<div className='container'> 
                             <form>
 								<div className="form-group row">
 									<label for="inputEmail3" className="col-sm-3 col-form-label">Ingresa tu nombre</label>
@@ -39,10 +41,11 @@ function Form() {
 
 								<div className="form-group row">
 									<div className="col-sm-10">
-									<button type="submit" className="btn btn-light" id="export">Realizar compra</button>
+										<button type="submit" className="btn">Realizar compra</button>
 									</div>
 								</div>
 							</form>
+			</div>
         </>
     )
 }
