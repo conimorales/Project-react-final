@@ -1,10 +1,10 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar.js";
-import { Shop } from "./pages/shop/shop";
+import { Shop } from "./pages/Shop/Shop.js";
 import { Contact } from "./pages/contact";
-import { Cart } from "./pages/cart/cart";
-import { ShopContextProvider } from "./context/shop-context";
+import { Cart } from "./pages/Cart/Cart";
+import { ShopContextProvider } from "./context/Shop-context";
 import Home from './components/Home';
 import Form from './components/Form';
 function App() {
