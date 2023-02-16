@@ -4,7 +4,9 @@ import { PRODUCTS } from "../../products";
 import { CartItem } from "./Cart-item";
 import { useNavigate } from "react-router-dom";
 
+
 import "./cart.css";
+import Footer from "../../components/Footer";
 export const Cart = () => {
   const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
@@ -12,6 +14,7 @@ export const Cart = () => {
   const navigate = useNavigate();
 
   return (
+    <>
     <div className="cart">
       <div>
         <h1>Carrito de compras</h1>
@@ -52,7 +55,11 @@ export const Cart = () => {
         </div>
       ) : (
         <h1> Tu carrito esta vacío</h1>
+
       )}
+      
     </div>
+    <Footer/>
+    </>
   );
 };
