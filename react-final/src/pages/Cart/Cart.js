@@ -9,7 +9,9 @@ import "./cart.css";
 import Footer from "../../components/Footer";
 export const Cart = () => {
   const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
-  const totalAmount = getTotalCartAmount();
+  
+  const totalAmount = getTotalCartAmount()[0],
+  totalCount = getTotalCartAmount()[1];
 
   const navigate = useNavigate();
 
@@ -30,6 +32,7 @@ export const Cart = () => {
       {totalAmount > 0 ? (
         <div className="checkout">
           <p> Subtotal: ${totalAmount} </p>
+          <p> Cantidad Total: {totalCount} </p>
 
           <div className="container">
             <div className="row">
@@ -37,7 +40,8 @@ export const Cart = () => {
                 <button onClick={() => navigate("/products")}>Agregar otro </button>
               </div>
               <div className="col-sm">
-                  <button
+              <button onClick={() => navigate("/checkout")}>Finalizar la compra</button>
+                  {/* <button
                 onClick={() => {
                   checkout();
                   navigate("/checkout");
@@ -45,7 +49,7 @@ export const Cart = () => {
               >
                 {" "}
                 Finalizar la compra{" "}
-              </button>
+              </button> */}
               </div>
               
             </div>
