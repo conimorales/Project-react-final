@@ -39,7 +39,7 @@ function Form() {
 
 								<div className="form-group row">
 									<div className="col-sm-10">
-									<button type="submit" className="btn btn-light" id="export">Enviar</button>
+									<button type="submit" className="btn btn-light" id="export">Realizar compra</button>
 									</div>
 								</div>
 							</form>
