@@ -7,7 +7,7 @@ import { ShopContext } from "../context/Shop-context";
 import { PRODUCTS } from "../products";
 import { CartItem } from "../pages/Cart/Cart-item-disable";
 import { useNavigate } from "react-router-dom";
-
+import {$} from 'jquery'; 
 
 import "../pages/Cart/cart.css";
 
@@ -18,6 +18,19 @@ export const Form = () => {
 	totalCount = getTotalCartAmount()[1];
 
 	const navigate = useNavigate();
+	function tableToJson(table){
+		let data = []
+		let header = []
+
+		for (let i=0; i <table.rows[0].cells.length; i++){
+			header[i] = table.rows[0].cells[i].innerHTML.toLowerCase().replace(/ /gi, '')
+		}
+
+		for (let i=0; i <table.rows[0].cells.length; i++){
+			header[i] = table.rows[0].cells[i].innerHTML.toLowerCase().replace(/ /gi, '')
+		}
+	}
+
 
 return (
     <>
@@ -75,7 +88,7 @@ return (
 					
 					<div class="container bg-light">
 						<div class="col-md-12 text-center">
-							<button
+							<button id="export"
 								onClick={() => {
 								checkout();
 								navigate("/checkout");
@@ -100,59 +113,4 @@ return (
     </>
   );
 };
-
-/* 
-function Form() {
-    return (
-        <>
-
-
-		<div className='container'> 
-		<h1>Formulario de compra</h1>
-		
-			<form className="needs-validation mt-4" novalidate>
-				<div className="form-row">
-					<div className="col-md-6 mb-3">
-						<label for="validationCustom01">Nombre</label>
-						<input type="text" className="form-control" id="validationCustom01" required></input>
-					</div>
-					<div className="col-md-6 mb-3">
-						<label for="validationCustom02">Apellido</label>
-						<input type="text" className="form-control" id="validationCustom02" required></input>
-					</div>
-				</div>
-				<div className="form-row">
-					<div className="col-md-6 mb-3">
-						<label for="validationCustom01">Correo</label>
-						<input type="text" className="form-control" id="validationCustom01" required></input>
-					</div>
-					<div className="col-md-6 mb-3">
-						<label for="validationCustom02">Confirmación de correo </label>
-						<input type="text" className="form-control" id="validationCustom02" required></input>
-					</div>
-				</div>
-				<div className="form-row">
-					<div className="col-md-6 mb-3">
-						<label for="validationCustom01">Teléfono</label>
-						<input type="text" className="form-control" id="validationCustom01" required></input>
-					</div>
-
-				</div>
-
-				
-				<div class="container bg-light">
-					<div class="col-md-12 text-center">
-						<button className="btn btn-outline-dark" type="submit">Realizar la compra</button>
-
-					</div>
-				</div>
-			</form>
-		</div>
-		<div className='mt-5'>
-			<Footer/>
-		</div>
-        </>
-    )
-} */
-
-export default  Form;
+export default Form

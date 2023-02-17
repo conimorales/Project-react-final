@@ -6,6 +6,9 @@ export const CartItem = (props) => {
   const { cartItems, updateCartItemCount } =
     useContext(ShopContext);
 
+
+    
+
 return (
 
             <div class="col-sm">

@@ -16,21 +16,21 @@ export const PRODUCTS = [
   {
     id: 2,
     productName: "Macbook Pro 2022 (M1)",
-    price: 1999.0,
+    price: 200000,
     productImage: product2,
     details: "Lorem dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. "
   },
   {
     id: 3,
     productName: "Cannon M50 Camera",
-    price: 699.0,
+    price: 300000,
     productImage: product3,
     details: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using. "
   },
   {
     id: 4,
     productName: "WLS Van Gogh Denim Jacket",
-    price: 228.0,
+    price: 5000,
     productImage: product4,
     details: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using. "
   },

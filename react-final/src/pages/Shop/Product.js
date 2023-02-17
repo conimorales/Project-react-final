@@ -22,6 +22,8 @@ export const Product = (props) => {
         <div class="row">
         
           <div class="col-sm">
+
+ 
             <button type="button" className="addToCartBttn" data-toggle="modal" data-target="#exampleModal">
               Detalle
             </button>

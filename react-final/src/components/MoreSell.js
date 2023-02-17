@@ -43,7 +43,13 @@ function Home() {
                     </div> 
                 </div>
             </div>
-            <Link className="nav-link" to="/products" >Ver más productos</Link>
+
+            <div class="container mt-4">
+                <div class="col-md-12 text-center">
+                    <Link className="nav-link" to="/products" >Ver más productos</Link>
+                </div>
+            </div>
+            
         </div>
         
     )
