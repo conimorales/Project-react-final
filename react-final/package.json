@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@firebase/app-compat": "^0.2.3",
     "@gatsbyjs/reach-router": "^2.0.1",
     "@react-navigation/stack": "^6.3.14",
     "@testing-library/jest-dom": "^5.16.5",
