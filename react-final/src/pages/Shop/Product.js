@@ -17,11 +17,11 @@ export const Product = (props) => {
         <p> ${price}</p>
       </div>
 
-      <div class="container">
+      <div className="container">
       
-        <div class="row">
+        <div className="row">
         
-          <div class="col-sm">
+          <div className="col-sm">
 
  
             <button type="button" className="addToCartBttn" data-toggle="modal" data-target="#exampleModal">
@@ -29,14 +29,14 @@ export const Product = (props) => {
             </button>
             
 
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
+            <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div className="modal-dialog" role="document">
+                <div className="modal-content">
 
-                  <div class="modal-body">
-                    <div class="text-center">
-                      <div class="card-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <div className="modal-body">
+                    <div className="text-center">
+                      <div className="card-body">
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
 
@@ -45,14 +45,14 @@ export const Product = (props) => {
                       </div>
                     </div>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <div className="modal-footer">
+                    <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-sm">
+          <div className="col-sm">
           <button className="addToCartBttn" onClick={() => addToCart(id)}>
             Agregar {cartItemCount > 0 && <> ({cartItemCount})</>}
           </button>

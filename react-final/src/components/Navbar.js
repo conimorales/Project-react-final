@@ -28,18 +28,18 @@ export const Navbar = () => {
               <Link className="nav-link" to="/products" >Productos</Link>
             </li>           
           </ul>
-          <form class=" nav-item form-inline my-2 my-lg-0">
+          <form className="nav-item form-inline my-2 my-lg-0">
           {totalCount > 0 ? (
 
             
             <>
-              <Link className="nav-link" to="/cart" ><i class="fa-solid fa-cart-shopping"></i>Compras
-                <div class="badge badge-primary text-wrap ml-2" >
+              <Link className="nav-link" to="/cart" ><i className="fa-solid fa-cart-shopping"></i>Compras
+                <div className="badge badge-primary text-wrap ml-2" >
                 {totalCount} 
                 </div>
               </Link>
             </>
-              ) : ( <Link className="nav-link" to="/cart" ><i class="fa-solid fa-cart-shopping"></i>Compras</Link> )}
+              ) : ( <Link className="nav-link" to="/cart" ><i className="fa-solid fa-cart-shopping"></i>Compras</Link> )}
           </form>
         </div>
       </nav>

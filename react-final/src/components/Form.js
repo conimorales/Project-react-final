@@ -8,6 +8,7 @@ import { PRODUCTS } from "../products";
 import { CartItem } from "../pages/Cart/Cart-item-disable";
 import { useNavigate } from "react-router-dom";
 import {$} from 'jquery'; 
+import { Link } from 'react-router-dom'
 
 import "../pages/Cart/cart.css";
 
@@ -22,14 +23,24 @@ export const Form = () => {
 		let data = []
 		let header = []
 
-		for (let i=0; i <table.rows[0].cells.length; i++){
-			header[i] = table.rows[0].cells[i].innerHTML.toLowerCase().replace(/ /gi, '')
-		}
+		// for (let i=0; i <table.rows[0].cells.length; i++){
+		// 	header[i] = table.rows[0].cells[i].innerHTML.toLowerCase().replace(/ /gi, '')
+		// }
 
-		for (let i=0; i <table.rows[0].cells.length; i++){
-			header[i] = table.rows[0].cells[i].innerHTML.toLowerCase().replace(/ /gi, '')
+		for (let i=1; i <table.rows.length; i++){
+			let tableRow = table.rows[i];
+			let rowData = {}
+			for (let j=0; j< tableRow.cells.length; j++){
+				rowData[ header[j]]= tableRow.cells[j].innerHTML;
+			}
+			data.push(rowData);
 		}
+		return data;
 	}
+
+	let myjson = JSON.stringify(tableToJson(document.getElementsByClassName('export')))
+
+	console.log(myjson)
 
 
 return (
@@ -39,8 +50,8 @@ return (
 				<h1>Carrito de compras</h1>
 			</div>
 			<div className="container">
-			<div class="row">
-			<div class="col-sm">
+			<div className="row">
+			<div className="col-sm">
 				{PRODUCTS.map((product) => {
 				if (cartItems[product.id] !== 0) {
 					return <CartItem data={product} />;
@@ -84,18 +95,28 @@ return (
 						</div>
 
 					</div>
+					
+
+					<div className="container ">
+						<div className="col-md-12 text-center">
+
+						<button className="btn bg-light export" type="submit" id="export"><Link className=' bg-light' >Enviar</Link></button>
+							
+
+						</div>
+					</div>
 
 					
-					<div class="container bg-light">
-						<div class="col-md-12 text-center">
-							<button id="export"
+					<div className="container bg-light">
+						<div className="col-md-12 text-center">
+							<button 
 								onClick={() => {
 								checkout();
-								navigate("/checkout");
+								navigate("/products");
 								}}
 							>
 								{" "}
-								Realizar la compra{" "}
+								Volver{" "}
 							</button> 
 
 						</div>
