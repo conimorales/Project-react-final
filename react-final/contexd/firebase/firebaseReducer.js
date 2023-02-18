@@ -7,7 +7,7 @@ import {
   RESET_ORDEN,
   GET_SUMMARY
 
-} from "../../types";
+} from "../../src/types";
 export default (state, action) => {
   switch (action.type) {
     case GET_RESTAURANTES:
