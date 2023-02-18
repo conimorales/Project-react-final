@@ -1,4 +1,4 @@
-import "./App.css";
+/* import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar.js";
 import { Shop } from "./pages/Shop/Shop.js";
@@ -28,42 +28,22 @@ function App() {
 
 export default App;
 
-
-/* 
-import React from 'react';
-import './App.css';
-
-import {BrowserRouter, Routes, Route } from 'react-router-dom'
-
-
-import Home from './components/Home';
-import DetailsProduct from './components/DetailsProduct'
-
-// import Inicio from './components/Inicio.js'
-// import Nuevo from './components/Nuevo'
-
-function App() {
-  return (
-
-    <BrowserRouter>
-      <div className="App">
-
-
-          <Routes>
-
-
-            <Route path ='/' element={<Home/>}/>
-
-            <Route path ='/products' element={<DetailsProduct/>}/>  
-
-            <Route path ='*' element={<Home/> }/>  
-
-          </Routes>
-      </div>
-    </BrowserRouter>
-
-  );
-}
-
-export default App; 
  */
+
+import React from "react";
+import { useFonts } from "expo-font";
+import Screens from "../src/navigation/Screens";
+import FirebaseState from "../src/context_e/firebase/firebaseState";
+export default () => {
+  const [loaded] = useFonts({
+    Roboto_medium: require("../assets/Roboto-Medium.ttf"),
+  });
+  if (!loaded) {
+    return null;
+  }
+  return (
+    <FirebaseState>
+      <Screens />
+    </FirebaseState>
+  );
+};
