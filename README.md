@@ -1,6 +1,29 @@
 # Project-react-final
 Proyecto Final React CoderHouse 
+
+1) Vista Inicio
 ![image](https://user-images.githubusercontent.com/61435709/225147360-8bcb579b-11db-415f-af6a-016c4698b407.png)
+![image](https://user-images.githubusercontent.com/61435709/225147476-0bbad67b-268d-4a70-bfa1-34fc0a16c581.png)
+
+2) Vista Catálogo
+![image](https://user-images.githubusercontent.com/61435709/225147823-9f4c67d8-c827-43e7-9df4-46cc6c638da0.png)
+
+3) Vista Detalle
+![image](https://user-images.githubusercontent.com/61435709/225147974-36919d9e-b589-4931-a986-053971330d36.png)
+
+4) Vista Carrito de Compras
+![image](https://user-images.githubusercontent.com/61435709/225148640-81eda4d4-0f3b-48bf-b486-1eec2dfc02a5.png)
+
+5) Vista checkout
+![image](https://user-images.githubusercontent.com/61435709/225148715-2430bb3f-e2e9-4535-a421-a4e70e6d1823.png)
+
+
+
+
+
+
+
+
 
 ├── @babel/plugin-proposal-class-properties@7.18.6
 ├── @firebase/app-compat@0.2.3
