@@ -42,7 +42,7 @@ import { HashRouter, Route, Routes }  from 'react-router-dom';
 import { CartContextProvider } from './store/CartContext';
 import Footer from './components/Footer/Footer';
 import CheckOut from './components/CheckOut/';
-import Inicio from './pages/Inicio';
+import Inicio from './pages/Inicio/Index';
 import Contacto from './pages/Contacto';
 
 
@@ -56,8 +56,6 @@ function App() {
       <main>
       <Routes>
         <Route path="/inicio" element={<Inicio />} />
-
-
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/checkout" element={<CheckOut />} />
         <Route path="/item/:itemid" element={<ItemDetailContainer greeting="Detalle de producto"/>} />  
