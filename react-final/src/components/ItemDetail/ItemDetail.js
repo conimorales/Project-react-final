@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import useCartContext from '../../store/CartContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
-import '../../assets/css/animaciones.css'
+
 
 
 

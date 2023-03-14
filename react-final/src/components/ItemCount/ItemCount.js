@@ -48,7 +48,7 @@ const ItemCount = ({stock, initial, onAdd, itemName}) => {
 const handleOnAdd = () => {
   const Toast = Swal.mixin({
     toast: true,
-    background: '#a18dce',
+    background: '#c5c1d0',
     showConfirmButton: false,
     timer: 2000,
     timerProgressBar: false,
@@ -59,7 +59,7 @@ const handleOnAdd = () => {
   })
   Toast.fire({
     icon: 'success',
-    title: `${count} ${itemName} ${pluralizeWord("agregada", "agregadas")} al carrito`
+    title: `${count} ${itemName} ${pluralizeWord("agregado", "agregados")} al carrito`
   })
         onAdd(count);
         setCount(initial);
@@ -70,14 +70,14 @@ const handleOnAdd = () => {
       <div className="d-flex justify-content-center text-center align-items-center contador counter-input input-group mb-3">
         
         <div className="input-group-prepend">
-          <Button onClick={handleRestar} className="text-white btn btn-outline-secondary">-</Button>
+          <Button onClick={handleRestar} className="text-white btn btn1">-</Button>
         </div>
         <input type="text" className="form-control h-100 text-center" readOnly value={count} />
         <div className="input-group-append">
-          <Button onClick={handleAgregar} className="text-white btn btn-outline-secondary">+</Button>
+          <Button onClick={handleAgregar} className="text-white btn btn1">+</Button>
         </div>
         
-        <Button onClick={handleOnAdd} className="text-white btn btn-outline-secondary m-2">Agregar al carrito</Button>
+        <Button onClick={handleOnAdd} className="text-white btn  m-2 btn1">Agregar</Button>
       </div>
       
     </>

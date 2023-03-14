@@ -160,8 +160,8 @@ function CheckOut() {
       <div className="row g-5">
         <div className="col-md-5 col-lg-4 order-md-last">
           <h4 className="d-flex justify-content-between align-items-center mb-3">
-            <span className="text-primary">Su carrito</span>
-            <span className="badge bg-primary rounded-pill">{itemsTotal()}</span>
+            <span className="text-secondary">Su carrito</span>
+            <span className="badge bg-secondary rounded-pill">{itemsTotal()}</span>
           </h4>
           <ul className="list-group mb-3">
           {cart.map(item => (
@@ -213,10 +213,10 @@ function CheckOut() {
                 </div>
               </div>
             </div>
-            <hr className="my-4" />
+            <hr className="my-4 mt-5" />
             
-            <hr className="my-4" />
-            <button onClick={handleSubmit} className="w-100 btn btn-primary btn-lg" type="submit">Pagar</button>
+
+            <button onClick={handleSubmit} className="w-100 btn btn1 mt-5 my-5" type="submit">Confirmar Compra</button>
           </form>
           
         </div>

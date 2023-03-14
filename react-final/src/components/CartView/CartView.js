@@ -83,18 +83,18 @@ else {
     <section id="carrito" className="py-2 text-center container slide-in-fwd-center">
       <div className="row py-lg-2">
 
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Cantidad total de items: {itemsTotal()}</h5>
+        <div className="row">
+          <div className="col-sm-6">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Cantidad total de items: {itemsTotal()}</h5>
               </div>
             </div>
           </div>
-          <div class="col-sm-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Total: $ {precioTotal()} </h5>
+          <div className="col-sm-6">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Total: $ {precioTotal()} </h5>
               </div>
             </div>
           </div>
@@ -113,9 +113,9 @@ else {
                   <Card.Title>{itemCart.name}</Card.Title>
                   <Card.Img variant="top" src={itemCart.picture} alt={itemCart.name}  height="150" />
                   <Card.Body> 
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Cantidad: {itemCart.cant} </li>
-                      <li class="list-group-item">Costo de {itemCart.name}: {itemCart.price * itemCart.cant}</li>
+                    <ul className="list-group list-group-flush">
+                      <li className="list-group-item">Cantidad: {itemCart.cant} </li>
+                      <li className="list-group-item">Costo de {itemCart.name}: {itemCart.price * itemCart.cant}</li>
                     </ul>
                     <Button onClick={handleRemove} className="btn btn1">Eliminar</Button>
                   </Card.Body>
@@ -130,14 +130,14 @@ else {
           </div>
           <Link to="/"><Button className="btn btn-light">Volver al catálogo</Button></Link> 
 
-          <div class="row mt-3">
-            <div class="col-sm-2">
+          <div className="row mt-3">
+            <div className="col-sm-2">
               
             </div>
-            <div class="col-sm-4">
+            <div className="col-sm-4">
               <Button className="btn btn2 btn-lg" onClick={handleVaciar}> Vaciar carrito</Button>
             </div>
-            <div class="col-sm-4">
+            <div className="col-sm-4">
               <Link to="/checkout"><Button className="btn btn3 btn-lg">Ir al pago</Button></Link> 
             </div>
           </div>

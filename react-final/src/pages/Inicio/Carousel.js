@@ -12,11 +12,11 @@ return (
 
 <div >
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
+    <div className="container">
+        <div className="row">
+            <div className="col-sm">
             </div>
-            <div class="col-sm">
+            <div className="col-sm">
                 <Carousel>
                         <Carousel.Item>
                             <img src={product1} width="auto" height="600" alt="img1"/>
@@ -29,7 +29,7 @@ return (
                         </Carousel.Item>
                 </Carousel>
             </div>
-            <div class="col-sm">
+            <div className="col-sm">
 
             </div>
         </div>

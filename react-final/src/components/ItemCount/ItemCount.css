@@ -1,3 +1,6 @@
 .producto{
 width: 18rem;
 }
+.btn1{
+    background: linear-gradient(to right, #a18dce, #a18dce, #bd82c3);
+}

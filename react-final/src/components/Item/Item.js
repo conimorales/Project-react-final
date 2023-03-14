@@ -27,9 +27,9 @@ function Item({ item, stock, name, price, details, picture } ) {
     </Card.Text>
     </Card.Body>
 
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">$ {price}</li>
-        <li class="list-group-item">Stock: {stock}</li>
+      <ul className="list-group list-group-flush">
+        <li className="list-group-item">$ {price}</li>
+        <li className="list-group-item">Stock: {stock}</li>
       </ul>
       <br></br>
 
