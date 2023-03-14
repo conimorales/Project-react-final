@@ -20,6 +20,11 @@ Proyecto Final React CoderHouse
 6) Compra realizada 
 ![image](https://user-images.githubusercontent.com/61435709/225148912-04e6245f-8957-4df9-9eac-8119da31ea5b.png)
 
+7) Firestore
+![image](https://user-images.githubusercontent.com/61435709/225149113-c2f6f56b-de12-4f99-9b6a-9aa82bc987a4.png)
+
+7.1) Firestore 
+![image](https://user-images.githubusercontent.com/61435709/225149215-2849fd23-a451-4210-9177-ab1d9e220d89.png)
 
 
 
