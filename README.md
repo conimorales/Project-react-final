@@ -17,6 +17,8 @@ Proyecto Final React CoderHouse
 5) Vista checkout
 ![image](https://user-images.githubusercontent.com/61435709/225148715-2430bb3f-e2e9-4535-a421-a4e70e6d1823.png)
 
+6) Compra realizada 
+![image](https://user-images.githubusercontent.com/61435709/225148912-04e6245f-8957-4df9-9eac-8119da31ea5b.png)
 
 
 
