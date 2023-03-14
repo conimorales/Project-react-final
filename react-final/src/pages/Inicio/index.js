@@ -6,12 +6,9 @@ import logo from './logo.jfif';
 import '../../assets/css/animaciones.css'
 import LoadingSpinner from '../../components/LoadingSpinner';
 
-
-
 function Inicio() {
-  
-  document.title = 'Eccomerce ConiMor';
 
+  document.title = 'Eccomerce ConiMor';
 
   if(logo === undefined){
     return <section id="menu" className="py-5 text-center container">
