@@ -1,0 +1,24 @@
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+  }
+  .revisa-cantidad {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color:  #b6aad2;
+    border-radius: 50%;
+    font-size: 14px;
+    text-align: center;
+  }
+  .revisa-cantidad2 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #b6aad2;
+    color: #b6aad2;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+  }

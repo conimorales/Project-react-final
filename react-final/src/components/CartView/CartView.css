@@ -1,0 +1,25 @@
+.btn1{
+    background: linear-gradient(to right, #a18dce, #a18dce, #bd82c3);
+}
+
+.btn2{
+    background:  #c4c1c9;
+    color: black;
+}
+
+
+
+.btn2:hover{
+    background-color:  #a18dce;
+}
+
+.btn3{
+    background:  #c4c1c9;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.btn3:hover{
+    background-color:  #a18dce;
+}
